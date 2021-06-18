@@ -1,0 +1,26 @@
+year=int(input())
+year=year%12
+if(year==4):
+    print("rat")
+elif(year==5):
+    print("ox")
+elif(year==6):
+    print("tiger")
+elif(year==7):
+    print("rabbit")
+elif(year==8):
+    print("dragon")
+elif(year==9):
+    print("snake")
+elif(year==10):
+    print("horse")
+elif(year==11):
+    print("sheep")
+elif(year==0):
+    print("monkey")
+elif(year==1):
+    print("rooster")
+elif(year==2):
+    print("dog")
+else:
+    print("pig")

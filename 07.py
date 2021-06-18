@@ -1,0 +1,25 @@
+p=input("輸入月租費式及通話時間為:")
+p=p.split(",")
+type=int(p[0])
+time=int(p[1])
+if(type==186):
+    if(time*0.09>type):
+        total=time*0.09*0.8
+    else:
+        total=time*0.09*0.9
+if(type==386):
+    if(time*0.08>type):
+        total=time*0.08*0.7
+    else:
+        total=time*0.08*0.8
+if(type==586):
+    if(time*0.07>type):
+        total=time*0.07*0.6
+    else:
+        total=time*0.07*0.7
+if(type==986):
+    if(time*0.06>type):
+        total=time*0.06*0.5
+    else:
+        total=time*0.06*0.6
+print("通話費為:"+str(round(total)))
